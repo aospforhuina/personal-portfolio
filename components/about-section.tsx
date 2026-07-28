@@ -5,10 +5,6 @@ const skills = [
   "windows optimizion"
 ]
 
-const timeline = [
-  { period: "2022 — Now", role: "Independent Designer", place: "Freelance" }
-]
-
 export function AboutSection() {
   return (
     <section id="about" className="border-t border-border/60">
@@ -51,35 +47,10 @@ export function AboutSection() {
                 ))}
               </div>
             </div>
-
-            <div className="mt-8">
-              <h3 className="text-xs uppercase tracking-wide text-muted-foreground">
-                Experience
-              </h3>
-              <ul className="mt-3 divide-y divide-border/60">
-                {timeline.map((item) => (
-                  <li
-                    key={item.role}
-                    className="flex items-baseline justify-between gap-4 py-3"
-                  >
-                    <div>
-                      <p className="text-sm font-medium text-foreground">
-                        {item.role}
-                      </p>
-                      <p className="text-sm text-muted-foreground">
-                        {item.place}
-                      </p>
-                    </div>
-                    <span className="shrink-0 text-sm text-muted-foreground">
-                      {item.period}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-            </div>
           </div>
         </div>
       </div>
     </section>
   )
 }
+
