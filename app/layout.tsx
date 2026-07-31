@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`bg-background ${geist.variable} ${instrumentSerif.variable}`}
+      className={`${geist.variable} ${instrumentSerif.variable}`}
       suppressHydrationWarning
     >
       <head>

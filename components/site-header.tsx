@@ -14,8 +14,8 @@ export function SiteHeader() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-border/60 bg-background/80 backdrop-blur-md">
-      <div className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
+    <header>
+      <div className="flex items-center justify-between px-6 py-4">
         <a href="#top" className="flex flex-col leading-tight">
           <span className="text-sm font-medium text-foreground">The Poki999</span>
           <span className="text-sm text-muted-foreground">Product Designer</span>
@@ -49,8 +49,8 @@ export function SiteHeader() {
       </div>
 
       {open && (
-        <nav className="border-t border-border/60 md:hidden">
-          <div className="mx-auto flex max-w-4xl flex-col px-6 py-2">
+        <nav className="border-t border-border/40 md:hidden">
+          <div className="flex flex-col px-6 py-2">
             {navItems.map((item) => (
               <a
                 key={item.href}
