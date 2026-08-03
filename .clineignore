@@ -1,0 +1,17 @@
+# Build output & dependencies
+node_modules/
+.next/
+.git/
+
+# Backup files
+public/*.bak
+
+# Scratch / temp files
+asdf.md
+index.txt
+invalid
+please.tsx
+
+# Auto-generated
+next-env.d.ts
+package-lock.json
